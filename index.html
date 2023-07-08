@@ -6,6 +6,123 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello RsSchool</h1>
-</body>
+    <div class="wrapper">
+      <header>
+          <nav>
+              <ul class="menu">
+                  <li><a class="header-link" href="#">about me</a></li>
+                  <li><a class="header-link" href="#">home</a></li>
+                  <li><a class="header-link" href="#">education</a></li>
+                  <li><a class="header-link" href="#">footer</a></li>
+              </ul>
+          </nav>
+      </header>
+      <div class="twoColumns">
+          <div class="leftColumn">
+              <div class="header-col">
+                  <img src="./images/programmist.png" alt="Portrait" width="200" height="200">
+                  <h1>Dmitry Yarigin</h1>
+                  <h2>Junior frontend Deloveper</h2>
+              </div>
+              <main>
+                  <section class="contacts">
+                      <h3>Contacts</h3>
+                      <ul>
+                          <li>
+                              <img src="./icons/phone-call.png" alt="Phone Icon" width="16" height="16">
+                              <p>+79385673456</p>
+                          </li>
+                          <li>
+                              <img src="./icons/at.png" alt="E-mail" width="16" height="16">
+                              <p>yarich1@yandex.ru</p>
+                          </li>
+                      </ul>
+                  </section>
+                  <section class="skills">
+                      <h3>Skills</h3>
+                      <ul>
+                          <li>html</li>
+                          <li>css</li>
+                          <li>Java Script</li>
+                          <li>GitHub</li>
+                          <li>VS Code</li>
+                      </ul>
+                  </section>
+                  <section>
+                      <h3>Languages</h3>
+                      <ul>
+                          <li>
+                              <p class="languageName">English</p>
+                              <p>upper-intermediate</p>
+                          </li>
+                          <li>
+                              <p class="languageName">Russian</p>
+                              <p>Native</p>
+                          </li>
+                      </ul>
+                  </section>
+              </main>
+         
+          </div>
+          <aside class="rightColumn">
+              <section class="aboutMyself">
+                  <div class="subHeader">
+                      <img src="./icons/man.png" alt="about me">
+                      <h3>About me</h3>
+                  </div>
+                  <p class="pharagraph">I am started frontend developer. I've made several websites, I'm studying js. sociable, I work well in a team,
+                      I like to learn new things and then implement it in the project. I quickly delve into the problem and look for the best solution</p>
+              </section>
+              <section class="courses">
+                  <div class="subHeader">
+                      <img src="./icons/book.png" alt="courses">
+                      <h3>Courses</h3>
+                  </div>
+                  <ul>
+                      <li>codeCademy</li>
+                      <li>FreeCodeCamp</li>
+                      <li>RS school</li>
+                  </ul>
+              </section>
+              
+              <section class="education">
+                  <div class="subHeader">
+                      <img src="./icons/hat.png" alt="courses">
+                      <h3>education</h3>
+                  </div>
+                  <p>Sibiran State college</p>
+              </section>                
+              <section class="codeExample">
+                  <div class="subHeader">
+                  <img src="./icons/pc.png" alt="example">
+                  <h3>code example</h3>
+                  </div>
+                  <pre class="javascript" style="font-family:monospace;">   <span style="color: #000066; font-weight: bold;">function</span> peak<span style="color: #009900;">&#40;</span>arr<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+          <span style="color: #000066; font-weight: bold;">for</span> <span style="color: #009900;">&#40;</span>let i <span style="color: #339933;">=</span> <span style="color: #CC0000;">1</span><span style="color: #339933;">;</span> i <span style="color: #339933;">&amp;</span>lt<span style="color: #339933;">;</span> arr.<span style="color: #660066;">length</span> <span style="color: #339933;">-</span> <span style="color: #CC0000;">1</span><span style="color: #339933;">;</span> i<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+             let leftSum <span style="color: #339933;">=</span> arr.<span style="color: #660066;">slice</span><span style="color: #009900;">&#40;</span><span style="color: #CC0000;">0</span><span style="color: #339933;">,</span> i<span style="color: #009900;">&#41;</span>.<span style="color: #660066;">reduce</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#40;</span>accumulator<span style="color: #339933;">,</span> currentValue<span style="color: #009900;">&#41;</span> <span style="color: #339933;">=&gt;</span>
+                accumulator <span style="color: #339933;">+</span> currentValue<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+             let rightSum <span style="color: #339933;">=</span> arr.<span style="color: #660066;">slice</span><span style="color: #009900;">&#40;</span>i <span style="color: #339933;">+</span> <span style="color: #CC0000;">1</span><span style="color: #009900;">&#41;</span>.<span style="color: #660066;">reduce</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#40;</span>accumulator<span style="color: #339933;">,</span> currentValue<span style="color: #009900;">&#41;</span> <span style="color: #339933;">=&gt;</span> 
+                accumulator <span style="color: #339933;">+</span> currentValue<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+          &nbsp;
+                <span style="color: #000066; font-weight: bold;">if</span> <span style="color: #009900;">&#40;</span>leftSum <span style="color: #339933;">===</span> rightSum<span style="color: #009900;">&#41;</span> <span style="color: #000066; font-weight: bold;">return</span> i<span style="color: #339933;">;</span>
+          <span style="color: #009900;">&#125;</span>
+          <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #339933;">-</span><span style="color: #CC0000;">1</span>
+                  </pre>
+                  
+              </section>
+          </aside>
+      
+      </div>
+      <footer>
+          <a href="https://github.com/DmitryYarigin">
+              <img src="./icons/github.svg" alt="git" width="50" height="50">
+          </a>
+          <p class="year">© 2021</p>
+          <a href="https://rs.school/js/">
+              <img src="./icons/rs_school_js.svg" alt="Rsschool Icon" width="100" height="100">
+          </a>
+                
+      </footer>
+  </div>
+  </body>
 </html>

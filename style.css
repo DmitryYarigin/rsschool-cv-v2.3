@@ -1,0 +1,287 @@
+/* ===================RESET================= */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ================================== */
+
+body {
+    box-sizing: border-box;
+    background-color: DarkGray;
+    font-size: 18px;
+  }
+  p{
+    color: black;
+    font-weight: 500;
+  }
+  
+  .wrapper {
+    border-radius: 5px;
+    font-family: Arial, Verdana, sans-serif;
+    line-height: 1.5;
+    margin: 4px auto;
+    max-width: 1024px;
+    box-shadow: 10px 10px 20px 20px rgb(0 0 0 / 0.23);
+  }
+
+  
+  
+  .twoColumns {
+    display: flex;
+  
+  }
+  .leftColumn {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(33, 100, 146);
+    padding: 10px;
+    flex-direction: column;
+    width: 26%;
+    background-color: rgba(151, 211, 240, 0.685);
+  }
+  .leftColumn section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2{
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: rgb(28, 84, 122);
+    border-bottom: 3px solid black; 
+  }
+  
+  section{
+    margin-bottom: 40px;
+  }
+  .rightColumn {
+    border: 2px solid rgb(33, 100, 146);
+    padding: 20px 18px 20px 18px;
+    width: 74%;
+    background-color: Gainsboro;
+  }
+  header{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: rgb(33, 100, 146);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+  nav{
+    width: 100%;
+  }
+
+  nav a{
+    text-decoration: none;
+    color: darkblue
+  }
+  .header-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .myPhoto {
+    border: 1px solid rgb(33, 100, 146);
+    border-radius: 10%;
+    object-fit:cover;
+    margin-top: 20px;
+  }
+  
+  .header-col h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .menu {
+    margin: 0 150px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .header-link {
+    font-weight: 500;
+    font-size: 22px;
+    color: rgba(245, 245, 245);
+    margin: 20px 0 20px 0;
+    transition: color .3s;
+  }
+
+  .header-link:hover {
+    color: rgba(245, 245, 245, 0.8);
+  }
+  
+  main ul {
+    list-style: none;
+  }
+  
+  main :not(.contacts) ul{
+    list-style-type: disc;
+    margin-left: 50px;
+  }
+
+  .main-icon {
+    margin-right: 5px;
+  }
+  
+  .contacts li p{
+    display: inline;
+    vertical-align: middle;
+  }
+  
+  .languageName {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .pharagraph{
+    max-width: 100%;
+  }
+  .subHeader{
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+  }
+  .courses ul{
+    padding-left: 40px;
+  }
+
+  .subHeader h3{
+    text-align: left;
+  }
+  .subHeader p{
+    max-width: 100%;
+  }
+
+  .rightColumn h3{
+    flex: 1;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(28, 84, 122);
+    border-bottom: 3px solid black;
+  }
+  
+  .courses ul{
+    list-style-type: disc;
+  
+  }
+  
+  pre {
+    padding-top: 20px;
+      overflow: auto;
+      overflow-y: hidden;
+      font-size: 15px;
+      line-height: 20px;
+      background: #efefef;
+      border: 2px solid rgb(19, 18, 18);
+    border-radius: 10px;
+      padding: 10px;
+      color: #333;
+  }
+
+  .my-projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .project-example {
+    border: 1px solid rgb(103, 87, 87);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .project-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  footer{
+    border: 2px solid rgb(33, 100, 146);
+    background-color: rgb(234, 234, 241);
+    height: 200px;
+    color: #fff;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .github-icon {
+    height: 50px;
+    width: 50px;
+    transition: opacity .2s;
+  }
+
+  .github-icon:hover {
+    opacity: 0.8;
+  }
+
+  .right-logo {
+    height: 100px;
+    width: 100px;
+    transition: opacity .2s;
+  }
+
+  
+  .right-logo:hover {
+    opacity: 0.8;
+  }
+
+  .year{
+    font-weight: bold;
+  }
+  
+ 
